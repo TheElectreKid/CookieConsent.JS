@@ -1,0 +1,310 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url('Ubuntu-Regular.ttf');
+}
+
+html {
+    font-family: 'Ubuntu';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: slateblue;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 0%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 32em;
+    background-color: slateblue;
+    color: slateblue;
+
+}
+
+/* ==== Primary Elements ==== */
+
+/* === Cookie Consent === */
+
+#consentbanner {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    align-content: center;
+}
+
+#consentpopup {
+    background-color: slateblue;
+    color: aliceblue;
+    z-index: 2;
+    margin: 25%;
+    margin-top: 8%;
+    padding: 4em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.723);
+    text-align: center;
+}
+
+#consenttitle {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+#consentdesc {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+#consentdecision {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.cookiebutton {
+    all: unset;
+    background-color: slateblue;
+    cursor: pointer;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    padding: 0.8em 2em;
+    font-size: 1.2rem;
+    appearance: none;
+}
+
+button.cookiebutton:hover {
+    background-color: rgb(120, 103, 229);
+}
+
+button.cookiebutton:active {
+    background-color: rgb(91, 77, 182);
+}
+
+/* === Header Bar === */
+#websitename {
+    margin: 0.2em;
+    padding: 1em;
+    text-align: left;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+#navbar {
+    margin: 0.2em;
+    padding: 0.5em;
+    align-content: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+
+.navitem {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+}
+
+.navitem:hover {
+    text-decoration: underline;
+}
+
+/* === Title Card (Division 1) === */
+
+#titlecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#title {
+    padding: 2em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+
+    text-align: center;
+    font-size: 4rem;
+}
+
+#subtitle {
+    padding: 5em;
+    margin-top: 0em;
+    padding-top: 0em;
+
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+/* === Details (Division 2) === */
+
+#mydetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: slateblue;
+    margin: 0em;
+    padding: 1em;
+}
+
+/* == Projects == */
+#projects {
+    flex: 1;
+    background-color: aliceblue;
+    margin: 1em;
+    padding: 1.7em;
+    padding-top: 1em;
+    border-radius: 1em;
+}
+
+#projectstitle {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#projectslist {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0em;
+    margin: 0em;
+}
+
+.projectname {
+    margin: 0.5em;
+}
+
+/* == Work Experience == */
+#workexperiencelist {
+    background-color: aliceblue;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+
+}
+
+.workexperienceitem {
+    margin: 0em;
+    padding: 1em;
+    padding-top: 0em;
+    display: flex;
+    flex-direction: column;
+}
+
+.workexperiencename {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.workexperiencedesc {
+    margin-top: 0em;
+    margin-bottom: 0.8em;
+    min-width: 30em;
+    min-height: 6em;
+}
+
+.moredetails {
+    font-size: 0.8em;
+}
+
+/* == Education == */
+
+#education {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    
+}
+
+#educationlabel {
+    margin: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    
+
+}
+
+#courselist {
+    padding-left: 0.8em;
+    list-style-type: none;
+}
+
+#coursesitook {
+    margin-bottom: 0.4em;
+}
+
+.spandesc {
+    margin: 0.8em;
+    margin-top: 0em;
+    margin-bottom: 0.8em;
+    min-width: 30em;
+    min-height: 6em;
+}
+
+/* === Reviews from my Teachers (Division 3) === */
+
+#myreviews {
+    display: flex;
+    flex-direction: column;
+    background-color: slateblue;
+}
+
+#myreviewstitle {
+    margin: 1em;
+    padding: 2em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+#reviewslist {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    padding: 2em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+.reviewslistitem {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.teacherquote {
+    min-height: 8em;
+    min-width: 16em;
+}
+
+.teachername {
+    color: grey;
+}
+
+.teachertype {
+    color: grey;
+}
+
+/* === Footer Elements === */
+
+
