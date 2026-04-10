@@ -1,4 +1,4 @@
-#CookieConsent.JS
+CookieConsent.JS
 
 Basic Website with a Cookie Consent, written in JavaScript, CSS and HTML
 
